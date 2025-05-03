@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('Agg')
 import numpy as np
 import datetime
 import os
@@ -25,4 +27,4 @@ def generer_motif(cotes, profondeur, taille, angle_rotation, couleur='blue'):
 
     plt.close()
 
-    return nom_fichier
+    return "static/images/generated/" + nom_fichier
