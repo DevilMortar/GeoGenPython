@@ -27,4 +27,4 @@ def generer_motif(cotes, profondeur, taille, angle_rotation, couleur='blue'):
 
     plt.close()
 
-    return "static/images/generated/" + nom_fichier
+    return "/images/generated/" + nom_fichier

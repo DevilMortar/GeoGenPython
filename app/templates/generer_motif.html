@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Résultat du motif</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Motif généré avec succès !</h1>
+        <img src="{{ url_for('static', filename=chemin_image) }}" alt="Motif généré">
+        <br>
+        <a href="{{ url_for('geogen.index') }}">← Revenir à l’accueil</a>
+    </div>
+</body>
+</html>

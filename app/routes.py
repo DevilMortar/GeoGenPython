@@ -20,8 +20,7 @@ def generer_motif_route():
         # Appeler la fonction generer_motif avec les paramètres reçus
         fichier_image = generer_motif(cotes, profondeur, taille, angle_rotation, couleur)
         
-        # Renvoie le chemin de l'image générée, ou rediriger vers une page de confirmation
-        return f"<img src='/{fichier_image}' alt='Motif généré' />"
+        return render_template('generer_motif.html', chemin_image=fichier_image)
     
     except Exception as e:
         # Gérer les erreurs
