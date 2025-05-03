@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Générateur de Motifs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Générer un motif géométrique</h1>
-    <form action="/generer_motif" method="POST">
-        <label>Nombre de côtés :</label>
-        <input type="number" name="cotes" required>
+    <div class="form-container">
+        <h1>Générer un motif géométrique</h1>
+        <form action="/generer_motif" method="POST">
+            <label>Nombre de côtés :</label>
+            <input type="number" name="cotes" required>
 
-        <label>Profondeur (répétitions) :</label>
-        <input type="number" name="profondeur" required>
+            <label>Profondeur (répétitions) :</label>
+            <input type="number" name="profondeur" required>
 
-        <label>Taille initiale :</label>
-        <input type="number" name="taille" required>
+            <label>Taille initiale :</label>
+            <input type="number" name="taille" required>
 
-        <label>Angle de rotation :</label>
-        <input type="number" name="angle_rotation" required>
+            <label>Angle de rotation :</label>
+            <input type="number" name="angle_rotation" required>
 
-        <label>Couleur :</label>
-        <input type="color" name="couleur" value="#0000ff">
+            <label>Couleur :</label>
+            <input type="color" name="couleur" value="#0000ff">
 
-        <button type="submit">Générer</button>
-    </form>
+            <button type="submit">Générer</button>
+        </form>
+    </div>
 </body>
 </html>
